@@ -1,0 +1,25 @@
+{
+    "name": "@pierreminiggio/tiktok-video-lister",
+    "version": "1.0.0",
+    "description": "TikTok Video Lister",
+    "main": "index.js",
+    "type": "module",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/pierreminiggio/tiktok-video-lister.git"
+    },
+    "author": "Pierre MINIGGIO",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/pierreminiggio/tiktok-video-lister/issues"
+    },
+    "homepage": "https://github.com/pierreminiggio/tiktok-video-lister#readme",
+    "dependencies": {
+        "@pierreminiggio/puppeteer-page-scroller": "github:pierreminiggio/puppeteer-page-scroller",
+        "node": "^12.6.0",
+        "puppeteer": "^1.20.0"
+    },
+    "scripts": {
+        "test": "node test.js"
+    }
+}
