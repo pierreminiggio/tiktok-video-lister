@@ -12,5 +12,5 @@ Utilisation :
 ```javascript
 import crawler from '@pierreminiggio/tiktok-video-lister'
 
-const links = await crawler('UCKbunxMnqxM8UFMEYF79CUQ')
+const links = await crawler('pierreminiggio', 2000)
 ```
