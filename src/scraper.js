@@ -16,7 +16,7 @@ export default function (tikTokUsername, scrollDistance, show) {
         try {
             browser = await puppeteer.launch({
                 headless: ! show,
-                args: ['--no-sandbox']
+                args: ['--disable-setuid-sandbox', '--no-sandbox']
             })
         } catch (e) {
             reject(e)
@@ -30,7 +30,7 @@ export default function (tikTokUsername, scrollDistance, show) {
             await scroll(page, scrollDistance)
 
             const html = await page.evaluate(() => document.body.outerHTML)
-            
+
             const videoLink = userPage + '/video/'
             const startLinksSplit = html.split(videoLink)
 
